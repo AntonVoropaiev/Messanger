@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,8 @@
 		0A8D64D526B5C3D8000B4E8F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A8D64D326B5C3D8000B4E8F /* Main.storyboard */; };
 		0A8D64D726B5C3D9000B4E8F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A8D64D626B5C3D9000B4E8F /* Assets.xcassets */; };
 		0A8D64DA26B5C3D9000B4E8F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A8D64D826B5C3D9000B4E8F /* LaunchScreen.storyboard */; };
+		0A8D64E226B5C547000B4E8F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0A8D64E126B5C547000B4E8F /* GoogleService-Info.plist */; };
+		AD18D5C1D514620073F064E7 /* Pods_Messanger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E1DD8B1068D19179A731C83 /* Pods_Messanger.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,10 @@
 		0A8D64D626B5C3D9000B4E8F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0A8D64D926B5C3D9000B4E8F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0A8D64DB26B5C3D9000B4E8F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0A8D64E126B5C547000B4E8F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		8E1DD8B1068D19179A731C83 /* Pods_Messanger.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Messanger.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A491F2198E0A6939A9B713D1 /* Pods-Messanger.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Messanger.release.xcconfig"; path = "Target Support Files/Pods-Messanger/Pods-Messanger.release.xcconfig"; sourceTree = "<group>"; };
+		BCABCB25BD7A65DA16071E95 /* Pods-Messanger.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Messanger.debug.xcconfig"; path = "Target Support Files/Pods-Messanger/Pods-Messanger.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD18D5C1D514620073F064E7 /* Pods_Messanger.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +49,8 @@
 			children = (
 				0A8D64CC26B5C3D8000B4E8F /* Messanger */,
 				0A8D64CB26B5C3D8000B4E8F /* Products */,
+				668B887C4DEB8B182FBE94A5 /* Pods */,
+				D66203B03D624B2F76F2C25C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +65,7 @@
 		0A8D64CC26B5C3D8000B4E8F /* Messanger */ = {
 			isa = PBXGroup;
 			children = (
+				0A8D64E126B5C547000B4E8F /* GoogleService-Info.plist */,
 				0A8D64CD26B5C3D8000B4E8F /* AppDelegate.swift */,
 				0A8D64CF26B5C3D8000B4E8F /* SceneDelegate.swift */,
 				0A8D64D126B5C3D8000B4E8F /* ViewController.swift */,
@@ -67,6 +77,23 @@
 			path = Messanger;
 			sourceTree = "<group>";
 		};
+		668B887C4DEB8B182FBE94A5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BCABCB25BD7A65DA16071E95 /* Pods-Messanger.debug.xcconfig */,
+				A491F2198E0A6939A9B713D1 /* Pods-Messanger.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		D66203B03D624B2F76F2C25C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8E1DD8B1068D19179A731C83 /* Pods_Messanger.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +101,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0A8D64DE26B5C3D9000B4E8F /* Build configuration list for PBXNativeTarget "Messanger" */;
 			buildPhases = (
+				F5A13713401D086DB271B11B /* [CP] Check Pods Manifest.lock */,
 				0A8D64C626B5C3D8000B4E8F /* Sources */,
 				0A8D64C726B5C3D8000B4E8F /* Frameworks */,
 				0A8D64C826B5C3D8000B4E8F /* Resources */,
+				00AE4E2F0335FAE0DC5200EF /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -125,12 +154,55 @@
 			buildActionMask = 2147483647;
 			files = (
 				0A8D64DA26B5C3D9000B4E8F /* LaunchScreen.storyboard in Resources */,
+				0A8D64E226B5C547000B4E8F /* GoogleService-Info.plist in Resources */,
 				0A8D64D726B5C3D9000B4E8F /* Assets.xcassets in Resources */,
 				0A8D64D526B5C3D8000B4E8F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		00AE4E2F0335FAE0DC5200EF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Messanger/Pods-Messanger-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Messanger/Pods-Messanger-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Messanger/Pods-Messanger-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F5A13713401D086DB271B11B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Messanger-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0A8D64C626B5C3D8000B4E8F /* Sources */ = {
@@ -283,6 +355,7 @@
 		};
 		0A8D64DF26B5C3D9000B4E8F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BCABCB25BD7A65DA16071E95 /* Pods-Messanger.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -292,7 +365,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = Devian.Messanger;
+				PRODUCT_BUNDLE_IDENTIFIER = Devian.Messanger.com;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -301,6 +374,7 @@
 		};
 		0A8D64E026B5C3D9000B4E8F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A491F2198E0A6939A9B713D1 /* Pods-Messanger.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -310,7 +384,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = Devian.Messanger;
+				PRODUCT_BUNDLE_IDENTIFIER = Devian.Messanger.com;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
